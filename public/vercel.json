@@ -1,0 +1,22 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://api.hocgin.top/api/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "regions": [
+    "hkg1"
+  ],
+  "git": {
+    "deploymentEnabled": {
+      "main": false,
+      "gh-pages": true
+    }
+  }
+}
